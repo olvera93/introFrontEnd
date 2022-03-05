@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Pedidos</title>
+</head>
+
+<style>
+
+    html {
+        background-color: khaki;
+    }
+
+    .center {
+        margin: auto;
+        width: 50%;
+    }
+
+
+</style>
+
+<body>
+
+
+    <div class="center">
+        <h1>Formulario para realizar tu pedido</h1>
+
+         <!-- Formularios -->
+    <form action="/tablePedido.html" id="form1" method="post">
+        <label for="nombre">Nombre del cliente:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="telephone">Teléfono:</label>
+        <input type="text" id="telephone" name="telephone"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="description">Descripción:</label>
+        <br>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea><br><br>
+
+
+        <label for="sabp">Sabores:</label>
+        <select name="sabp" id="sabp">
+            <option value="">Selecciona una opción</option>
+            <option value="1">Chocolate</option>
+            <option value="2">Vainilla</option>
+            <option value="3">Fresa</option>
+            <option value="4">Frutilla</option>
+            <option value="5">Nuez</option>
+            <option value="6">Limón</option>
+            <option value="7">Cereza</option>
+            <option value="8">Mora</option>
+            <option value="9">Ciruela</option>
+            <option value="10">Naranja</option>
+        </select>
+        <label>Cantidad: </label>
+        <input type="number" name="sabp" id="sabp"> 
+        <br><br>
+
+        <label for="adorno">Adornos:</label>
+        <select name="adorno" id="adorno">
+            <option value="">Selecciona una opción</option>
+            <option value="1">Chispas de chocolate</option>
+            <option value="2">Chocoretas</option>
+            <option value="3">Listones comestibles</option>
+        </select> 
+        <label>Cantidad: </label>
+        <input type="number" name="adorno" id="adorno">
+        <br><br>
+
+        <button onclick="window.location.href='tablePedido.html'"> Enviar </button>
+        <input type="reset">
+    </form>
+    </div>
+   
+    
+
+    <script>
+        var form = document.getElementById('form1');
+        form.onsubmit = function(e) {
+            e.preventDefault();
+            var formData = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'tablePedido.html');
+            xhr.send(formData);
+        }
+
+        // Que se mande los datos al tablePedido.html
+
+
+
+    </script>
+ 
+    
+</body>
+</html>

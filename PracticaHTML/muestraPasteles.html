@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Pasteleria</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<style>
+    html {
+        background-color: khaki;
+    }
+
+     /* Estilo de header */
+     header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+    table {
+        border: #b2b2b2 1px solid;
+    }
+
+    td, th {
+        border: black 1px solid;
+    }
+
+     /* Estilo de footer */
+     footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+
+    /* Centrar el div */
+    .table-cake {
+        margin: auto;
+        width: 50%;   
+    }
+
+    /* Dar estilo al boton */
+    .button-form {
+        margin: auto;
+        width: 50%;
+    }
+     
+</style>
+
+
+<body>
+
+    <header>
+        <h2>Pasteleria Olvera</h2> 
+        <div>
+            <img class="img-cake" height="100" width="100" hspace="10"src="img/Olvera.png" alt="logo">
+        </div>
+    </header>
+
+   
+
+    <div class="table-cake">
+               
+
+
+        <table id="price">
+
+      
+            <tr>
+                <th>Nombre</th>
+                <th>Sabor</th>
+                <th>Precio</th>
+                <th>Muestra</th>
+            </tr>
+
+            <tr>
+                <td>Pastel imposible</td>
+                <td>Chocolate</td>
+                <td>$500</td>
+                <td>
+                    <img src="img/chocolate.jpg" alt="Pastel" width="200px" height="200px">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pastel Cuarzo</td>
+                <td>Vainilla</td>
+                <td>$550</td>
+                <td>
+                    <img src="img/vainilla.jpg" alt="Pastel" width="200px" height="200px">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pastel Esmeralda</td>
+                <td>Fresa</td>
+                <td>$700</td>
+                <td>
+                    <img src="img/fresa.jpg" alt="Pastel" width="200px" height="200px">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pastel Diamente</td>
+                <td>Pistache</td>
+                <td>$760</td>
+                <td>
+                    <img src="img/pistache.jpg" alt="Pastel" width="200px" height="200px">
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+        
+
+    <div class="button-form">
+        <button onclick="window.location.href='formularioPedido.html'">Realizar Pedido</button>
+    </div>
+
+    <footer>
+        <p>Calle Patito Num Ext. 403 Mz 10 Colonia ballena, Alcadía Coyoacan </p>
+    </footer>
+
+
+</body>
+
+</html>
